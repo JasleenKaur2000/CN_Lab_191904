@@ -14,7 +14,7 @@ print(kerberos.listdir())
 fname= raw_input("Enter filename to transfer ").strip()
 x=kerberos.sendfile(fname)
 if(x):
-	f=open('./Client/'+str(fname),'w')
+	f=open('./client/'+str(fname),'w')
 	print >>f,kerberos.sendfile(fname)
 	f.close()
 else:
